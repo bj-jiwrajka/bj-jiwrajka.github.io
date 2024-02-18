@@ -37,11 +37,6 @@ function Navbar({ darkMode, toggleDarkMode }) {
                 () => setactiveSection('Services')}>
               <li className={activeSection === 'Services' ? 'active' : ''}>Skills</li>
             </Link>
-            <Link spy={true} to="Education" smooth={true} onClick={
-              () => setShowLinks(!showLinks)} onSetActive={
-                () => setactiveSection('Education')}>
-              <li className={activeSection === 'Education' ? 'active' : ''}>Education</li>
-            </Link>
             <Link spy={true} to="Projects" smooth={true} onClick={
               () => setShowLinks(!showLinks)} onSetActive={
                 () => setactiveSection('Projects')}>

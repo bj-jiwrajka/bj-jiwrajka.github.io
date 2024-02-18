@@ -1,11 +1,4 @@
-import Navbar from "./Components/Navbar/Navbar";
-import Intro from "./Components/Intro/Intro";
-import Services from "./Components/Services/Services";
-import Projects from "./Components/Projects/Projects";
-import About from "./Components/About/About";
-import Education from "./Components/Education/Education";
-import Contact from "./Components/Contact/Contact";
-import Footer from "./Components/Footer/Footer";
+import { Navbar, Intro, Services, Projects, About, Education, Contact, Footer, Certifications } from './Components/index';
 import { useState } from "react";
 import './App.css';
 function App() {
@@ -15,14 +8,15 @@ function App() {
   };
   return (
     <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
-      <Navbar  darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Intro />
-      <About darkmode={darkMode}/>
-      <Services darkmode={darkMode}/>
-      <Education darkmode={darkMode} />
+      <About darkmode={darkMode} />
       <Projects darkmode={darkMode} />
+      <Services darkmode={darkMode} />
+      <Education darkmode={darkMode} />
+      <Certifications darkmode={darkMode} />
       <Contact darkmode={darkMode} />
-      <Footer darkmode={darkMode}/>
+      <Footer darkmode={darkMode} />
 
     </div>
 
